@@ -6,8 +6,8 @@ import { setUnitOption } from '../../state/unitOptions';
 import DropDownMenu from './DropdownMenu';
 
 interface IOptions {
-  text: String;
-  value: String;
+  text: string;
+  value: string;
 }
 
 interface ICategory {
