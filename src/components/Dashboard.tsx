@@ -6,12 +6,16 @@ import { setFromOption, setToOption } from '../state/measumentOptions';
 import { setFromValue, setToValue } from '../state/inputValues';
 import DropDown from './shared/DropDown';
 import { InputField } from './shared/InputFiled';
+
 import {
   lengthOptions,
   speedOptions,
   tempOptions,
   unitOptions,
 } from './shared/constansts';
+
+const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL;
+
 const Dashboard: React.FC = () => {
   const {
     unitOptionsSliceReducer: { unitOption },
@@ -73,7 +77,7 @@ const Dashboard: React.FC = () => {
   };
 
   useEffect(() => {
-    const baseUrl = 'http://127.0.0.1:8086/api/v1/conversions/convert';
+    const baseUrl = `${serverUrl}/api/v1/conversions/convert`;
 
     const queryString = `fromOption=${fromOption.value}&toOption=${toOption.value}&inputValue=${fromValue}`;
 
