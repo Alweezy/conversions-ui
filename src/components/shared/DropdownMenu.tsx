@@ -1,8 +1,8 @@
-import React, { Dispatch, SetStateAction } from 'react';
+import React from 'react';
 
 interface IOptions {
-  text: String;
-  value: String;
+  text: string;
+  value: string;
 }
 
 interface IDropDownMenu {
