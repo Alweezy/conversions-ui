@@ -96,7 +96,7 @@ const Dashboard: React.FC = () => {
     <>
       <div className="px-10 py-3 border b-1 rounded-lg w-1/2 h-1/2">
         <div className="text-center p-2 bg-black rounded-lg mb-2 text-gray-400">
-          Units Conveter
+          Units Converter
         </div>
         <div className="w-full">
           <DropDown options={unitOptions} source={'units'} />
